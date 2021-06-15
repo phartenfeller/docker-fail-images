@@ -52,5 +52,5 @@ jobs:
           # Strip git ref prefix from version
           echo IMAGE_ID=$IMAGE_ID
           echo VERSION=$VERSION
-          docker tag $CRASH_IMAGE $IMAGE_ID:$VERSION
+          docker tag $STUCK_IMAGE $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
