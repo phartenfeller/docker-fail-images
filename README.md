@@ -1,13 +1,16 @@
 # docker-fail-images
 
+I use these images to test some docker container orchestration logic.
+
 ## Crash Image
 
 **Just exits with an error code**
 
-Pull image:
+Use image:
 
 ```sh
 docker pull ghcr.io/phartenfeller/crash-img:latest
+docker run --rm ghcr.io/phartenfeller/crash-img:latest
 ```
 
 Build youself from source:
@@ -23,10 +26,11 @@ docker run --rm  crash-img
 
 **Never finishes**
 
-Pull image:
+Use image:
 
 ```sh
 docker pull ghcr.io/phartenfeller/stuck-img:latest
+docker run --rm -d ghcr.io/phartenfeller/stuck-img:latest
 ```
 
 Build youself from source:
