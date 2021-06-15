@@ -41,7 +41,7 @@ jobs:
 
       - name: Build Image stuck-img
         run: |
-          cd ../stuck-img
+          cd ./stuck-img
           docker build . --file Dockerfile -t $STUCK_IMAGE
 
       - name: Push stuck-img to GitHub Container Registry
